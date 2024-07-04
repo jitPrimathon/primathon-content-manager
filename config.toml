@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://primathon-content-manager.netlify.app/'
 languageCode = 'en-us'
 title = 'Primathon-content-management'
 theme = 'hugo-initio'
