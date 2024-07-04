@@ -18,7 +18,7 @@ collections:
    - name: "About" # Used in routes, e.g., /admin/collections/post
      label: "about" # Used in the UI
      folder: "content/about" # The path to the folder where the documents are stored
-     path: "{{slug}}/index"
+     path: "index"
      media_folder: "" # Save images in the post's own folder instead of the static folder
      public_folder: ""
      create: true
@@ -28,7 +28,7 @@ collections:
    - name: "home" # Used in routes, e.g., /admin/collections/post
      label: "home" # Used in the UI
      folder: "content/home" # The path to the folder where the documents are stored
-     path: "{{slug}}/subheader"
+     path: "subheader"
      media_folder: "" # Save images in the post's own folder instead of the static folder
      public_folder: ""
      create: true # Allow users to create new documents in this collection
