@@ -1,38 +1,19 @@
 backend:
   name: git-gateway
-  branch: main
-media_folder: "static/images" # Folder where user uploaded files should go
-public_folder: "images"
+  branch: main # Branch to update (main by default)
+
+media_folder: "static/images/uploads" # Folder where media files will be stored
+public_folder: "/images/uploads" # Folder where media files will be accessed from
+
 collections:
-   - name: "posts" # Used in routes, e.g., /admin/collections/post
-     label: "Posts" # Used in the UI
-     folder: "content/posts" # The path to the folder where the documents are stored
-     path: "{{slug}}/index"
-     media_folder: "" # Save images in the post's own folder instead of the static folder
-     public_folder: ""
-     create: true # Allow users to create new documents in this collection
-     fields: # The fields for each document, usually in front matter
-       - { label: "Title", name: "title", widget: "string" }
-       - { label: "Publish Date", name: "date", widget: "datetime" }
-       - { label: "Body", name: "body", widget: "markdown" }
-   - name: "About" # Used in routes, e.g., /admin/collections/post
-     label: "about" # Used in the UI
-     folder: "content/about" # The path to the folder where the documents are stored
-     path: "index"
-     media_folder: "" # Save images in the post's own folder instead of the static folder
-     public_folder: ""
-     create: true
-     fields:
-       - { label: "Title", name: "title", widget: "string" }
-       - { label: "Body", name: "body", widget: "text" }
-   - name: "home" # Used in routes, e.g., /admin/collections/post
-     label: "home" # Used in the UI
-     folder: "content/home" # The path to the folder where the documents are stored
-     path: "subheader"
-     media_folder: "" # Save images in the post's own folder instead of the static folder
-     public_folder: ""
-     create: true # Allow users to create new documents in this collection
-     fields: # The fields for each document, usually in front matter
-       - { label: "Title", name: "title", widget: "string" }
-       - { label: "Publish Date", name: "date", widget: "datetime" }
-       - { label: "Body", name: "body", widget: "markdown" }       
+  - name: "blogs"
+    label: "Blogs"
+    folder: "content/blogs"
+    media_folder: "" 
+    public_folder: ""
+    create: true
+    path: "{{slug}}/index"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
