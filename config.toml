@@ -11,6 +11,10 @@ url = "/"
 name = "blogs"
 url = "/blogs"
 
+[[params.menu]]
+name = "about"
+url = "/about"
+
 [params]
 # Meta description
 description = "A Tech Blog"

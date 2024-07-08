@@ -17,3 +17,14 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "about"
+    label: "About"
+    folder: "content/about"
+    media_folder: "" 
+    public_folder: ""
+    create: true
+    path: "index"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
