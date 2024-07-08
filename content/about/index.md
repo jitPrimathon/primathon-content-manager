@@ -2,4 +2,4 @@
 title: About
 date: 2023-11-12
 ---
-Chrome extensions are everywhere.
+H﻿ello everyone, this is about my personal website.
